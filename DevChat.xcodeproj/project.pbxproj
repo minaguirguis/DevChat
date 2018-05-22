@@ -54,14 +54,38 @@
 		566EA22220B3B5A0003A4D9C /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
+				566EA23520B3B5AB003A4D9C /* Model */,
+				566EA23620B3B5B4003A4D9C /* View */,
+				566EA23720B3B5BF003A4D9C /* Controller */,
 				566EA22320B3B5A0003A4D9C /* AppDelegate.swift */,
-				566EA22520B3B5A0003A4D9C /* ViewController.swift */,
 				566EA22720B3B5A0003A4D9C /* Main.storyboard */,
 				566EA22A20B3B5A0003A4D9C /* Assets.xcassets */,
 				566EA22C20B3B5A0003A4D9C /* LaunchScreen.storyboard */,
 				566EA22F20B3B5A0003A4D9C /* Info.plist */,
 			);
 			path = DevChat;
+			sourceTree = "<group>";
+		};
+		566EA23520B3B5AB003A4D9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		566EA23620B3B5B4003A4D9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		566EA23720B3B5BF003A4D9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				566EA22520B3B5A0003A4D9C /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
