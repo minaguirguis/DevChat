@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="DevChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBd-80-qNZ" userLabel="PreviewView" customClass="PreviewView" customModule="DevChat" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-Rh-xyK">
-                                <rect key="frame" x="314" y="28" width="69" height="48"/>
+                                <rect key="frame" x="353" y="28" width="69" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="69" id="6Dr-Tm-uY0"/>
                                     <constraint firstAttribute="height" constant="48" id="LYt-aG-yTB"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="camera_icon_snap"/>
+                                <connections>
+                                    <action selector="changeCameraBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zni-kO-XHJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-1f-QOD">
-                                <rect key="frame" x="156" y="601" width="63" height="58"/>
+                                <rect key="frame" x="175.66666666666666" y="670" width="63" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="iV9-Qb-sXa"/>
                                     <constraint firstAttribute="width" constant="63" id="sTm-I4-q0W"/>
                                 </constraints>
                                 <state key="normal" image="createsnap_btn"/>
+                                <connections>
+                                    <action selector="recordBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqI-0F-0ya"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,7 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cameraBtn" destination="2zI-Rh-xyK" id="js1-Nt-XCv"/>
                         <outlet property="previewView" destination="YBd-80-qNZ" id="SIB-G9-cR3"/>
+                        <outlet property="recordBtn" destination="6u2-1f-QOD" id="17i-Ud-iAZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
