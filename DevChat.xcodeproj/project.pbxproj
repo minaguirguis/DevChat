@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E99E02A569D388B448C7D49 /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E087E798BB7B40D7C46BE /* Pods_DevChat.framework */; };
+		5600EFFD20B62F6100972331 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600EFFC20B62F6100972331 /* RoundTextField.swift */; };
+		5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600EFFE20B64E0200972331 /* RoundedButton.swift */; };
 		5616F07220B4B57D0024F4D0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */; };
 		5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F07020B4B57D0024F4D0 /* PreviewView.swift */; };
 		5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F07520B4B5960024F4D0 /* CameraViewController.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		370E087E798BB7B40D7C46BE /* Pods_DevChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4354BEA6CC43D718A13942D7 /* Pods-DevChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat/Pods-DevChat.release.xcconfig"; sourceTree = "<group>"; };
+		5600EFFC20B62F6100972331 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		5600EFFE20B64E0200972331 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		5616F07020B4B57D0024F4D0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		5616F07520B4B5960024F4D0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5600EFFA20B62F2D00972331 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5600EFFB20B62F3300972331 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5600EFFC20B62F6100972331 /* RoundTextField.swift */,
+				5600EFFE20B64E0200972331 /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5616F07720B4B59E0024F4D0 /* AVCam */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				5616F07720B4B59E0024F4D0 /* AVCam */,
-				566EA23520B3B5AB003A4D9C /* Model */,
-				566EA23620B3B5B4003A4D9C /* View */,
+				5600EFFA20B62F2D00972331 /* Model */,
+				5600EFFB20B62F3300972331 /* View */,
 				566EA23720B3B5BF003A4D9C /* Controller */,
 				566EA22320B3B5A0003A4D9C /* AppDelegate.swift */,
 				566EA22720B3B5A0003A4D9C /* Main.storyboard */,
@@ -98,20 +118,6 @@
 				564111C420B5074600AF625C /* GoogleService-Info.plist */,
 			);
 			path = DevChat;
-			sourceTree = "<group>";
-		};
-		566EA23520B3B5AB003A4D9C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		566EA23620B3B5B4003A4D9C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		566EA23720B3B5BF003A4D9C /* Controller */ = {
@@ -254,6 +260,8 @@
 				5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */,
 				5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */,
 				566EA22620B3B5A0003A4D9C /* CameraVC.swift in Sources */,
+				5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */,
+				5600EFFD20B62F6100972331 /* RoundTextField.swift in Sources */,
 				566EA22420B3B5A0003A4D9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
