@@ -11,6 +11,7 @@
 		5600EFFD20B62F6100972331 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600EFFC20B62F6100972331 /* RoundTextField.swift */; };
 		5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600EFFE20B64E0200972331 /* RoundedButton.swift */; };
 		5600F00120B6568A00972331 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600F00020B6568A00972331 /* LoginVC.swift */; };
+		5600F00520B65E6F00972331 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600F00420B65E6F00972331 /* AuthService.swift */; };
 		5616F07220B4B57D0024F4D0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */; };
 		5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F07020B4B57D0024F4D0 /* PreviewView.swift */; };
 		5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F07520B4B5960024F4D0 /* CameraViewController.swift */; };
@@ -28,6 +29,7 @@
 		5600EFFC20B62F6100972331 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		5600EFFE20B64E0200972331 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5600F00020B6568A00972331 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5600F00420B65E6F00972331 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		5616F07020B4B57D0024F4D0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		5616F07520B4B5960024F4D0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5600F00320B65E5000972331 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5600F00420B65E6F00972331 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5616F07720B4B59E0024F4D0 /* AVCam */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		566EA22220B3B5A0003A4D9C /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
+				5600F00320B65E5000972331 /* Services */,
 				5616F07720B4B59E0024F4D0 /* AVCam */,
 				5600EFFA20B62F2D00972331 /* Model */,
 				5600EFFB20B62F3300972331 /* View */,
@@ -262,6 +273,7 @@
 				5616F07220B4B57D0024F4D0 /* PhotoCaptureDelegate.swift in Sources */,
 				5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */,
 				5600F00120B6568A00972331 /* LoginVC.swift in Sources */,
+				5600F00520B65E6F00972331 /* AuthService.swift in Sources */,
 				5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */,
 				566EA22620B3B5A0003A4D9C /* CameraVC.swift in Sources */,
 				5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */,

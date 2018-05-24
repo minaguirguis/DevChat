@@ -46,6 +46,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="AdN-fm-uoM" eventType="touchUpInside" id="EAK-n0-Ix7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Qd-BE-e7q" customClass="RoundTextField" customModule="DevChat" customModuleProvider="target">
                                 <rect key="frame" x="74.666666666666686" y="311" width="265" height="42"/>
@@ -139,6 +142,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A6m-jI-bhy"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="vmR-hM-C9l" id="Cm6-VP-sqf"/>
+                        <outlet property="passwordField" destination="4Qd-BE-e7q" id="zkP-lu-9mt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaC-Cm-4kJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
