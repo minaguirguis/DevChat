@@ -13,7 +13,7 @@
         <!--LoginScreen-->
         <scene sceneID="PYu-9t-mAp">
             <objects>
-                <viewController id="AdN-fm-uoM" userLabel="LoginScreen" sceneMemberID="viewController">
+                <viewController id="AdN-fm-uoM" userLabel="LoginScreen" customClass="LoginVC" customModule="DevChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xvl-ae-68M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,6 +196,7 @@
                         <outlet property="cameraBtn" destination="2zI-Rh-xyK" id="js1-Nt-XCv"/>
                         <outlet property="previewView" destination="YBd-80-qNZ" id="SIB-G9-cR3"/>
                         <outlet property="recordBtn" destination="6u2-1f-QOD" id="17i-Ud-iAZ"/>
+                        <segue destination="AdN-fm-uoM" kind="presentation" identifier="LoginVC" id="eG8-ti-P8Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

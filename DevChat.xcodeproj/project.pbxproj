@@ -10,6 +10,7 @@
 		2E99E02A569D388B448C7D49 /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E087E798BB7B40D7C46BE /* Pods_DevChat.framework */; };
 		5600EFFD20B62F6100972331 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600EFFC20B62F6100972331 /* RoundTextField.swift */; };
 		5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600EFFE20B64E0200972331 /* RoundedButton.swift */; };
+		5600F00120B6568A00972331 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600F00020B6568A00972331 /* LoginVC.swift */; };
 		5616F07220B4B57D0024F4D0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */; };
 		5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F07020B4B57D0024F4D0 /* PreviewView.swift */; };
 		5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5616F07520B4B5960024F4D0 /* CameraViewController.swift */; };
@@ -26,6 +27,7 @@
 		4354BEA6CC43D718A13942D7 /* Pods-DevChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat/Pods-DevChat.release.xcconfig"; sourceTree = "<group>"; };
 		5600EFFC20B62F6100972331 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		5600EFFE20B64E0200972331 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		5600F00020B6568A00972331 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		5616F07020B4B57D0024F4D0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		5616F07520B4B5960024F4D0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				5616F07520B4B5960024F4D0 /* CameraViewController.swift */,
 				566EA22520B3B5A0003A4D9C /* CameraVC.swift */,
+				5600F00020B6568A00972331 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				5616F07220B4B57D0024F4D0 /* PhotoCaptureDelegate.swift in Sources */,
 				5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */,
+				5600F00120B6568A00972331 /* LoginVC.swift in Sources */,
 				5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */,
 				566EA22620B3B5A0003A4D9C /* CameraVC.swift in Sources */,
 				5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */,
