@@ -14,11 +14,18 @@ class CameraVC: CameraViewController {
     @IBOutlet weak var previewView: PreviewView!
     @IBOutlet weak var recordBtn: UIButton!
     @IBOutlet weak var cameraBtn: UIButton!
-    
+    @IBOutlet weak var photoBtn: UIButton!
+    @IBOutlet weak var livePhotoModeButton: UIButton!
+    @IBOutlet weak var depthDataDeliveryButton: UIButton!
+    @IBOutlet weak var captureModeControl: UISegmentedControl!
     override func viewDidLoad() {
         _previewView = previewView
         _cameraButton = cameraBtn
         _recordButton = recordBtn
+        _photoButton = photoBtn
+        _livePhotoModeButton = livePhotoModeButton
+        _depthDataDeliveryButton = depthDataDeliveryButton
+        _captureModeControl = captureModeControl
         super.viewDidLoad()
     }
     
