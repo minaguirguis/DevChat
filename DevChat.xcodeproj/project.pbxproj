@@ -21,6 +21,11 @@
 		566EA22920B3B5A0003A4D9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566EA22720B3B5A0003A4D9C /* Main.storyboard */; };
 		566EA22B20B3B5A0003A4D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566EA22A20B3B5A0003A4D9C /* Assets.xcassets */; };
 		566EA22E20B3B5A0003A4D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566EA22C20B3B5A0003A4D9C /* LaunchScreen.storyboard */; };
+		56C39C0820B8FF7D0032840B /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C39C0720B8FF7D0032840B /* UsersVC.swift */; };
+		56C39C0A20B900C30032840B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C39C0920B900C30032840B /* UserCell.swift */; };
+		56CAE30320BB8023008326C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CAE30220BB8023008326C5 /* User.swift */; };
+		56EF320220B89810004349A9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF320120B89810004349A9 /* DataService.swift */; };
+		56EF320520B899FD004349A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF320420B899FD004349A9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		566EA22A20B3B5A0003A4D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566EA22D20B3B5A0003A4D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566EA22F20B3B5A0003A4D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C39C0720B8FF7D0032840B /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		56C39C0920B900C30032840B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		56CAE30220BB8023008326C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		56EF320120B89810004349A9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		56EF320420B899FD004349A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DF19533E5C944B569D7EDD8E /* Pods-DevChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevChat/Pods-DevChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +77,7 @@
 		5600EFFA20B62F2D00972331 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56EF320420B899FD004349A9 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,6 +87,7 @@
 			children = (
 				5600EFFC20B62F6100972331 /* RoundTextField.swift */,
 				5600EFFE20B64E0200972331 /* RoundedButton.swift */,
+				56C39C0920B900C30032840B /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				5600F00420B65E6F00972331 /* AuthService.swift */,
+				56EF320120B89810004349A9 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -129,6 +142,7 @@
 				566EA22C20B3B5A0003A4D9C /* LaunchScreen.storyboard */,
 				566EA22F20B3B5A0003A4D9C /* Info.plist */,
 				564111C420B5074600AF625C /* GoogleService-Info.plist */,
+				56CAE30220BB8023008326C5 /* User.swift */,
 			);
 			path = DevChat;
 			sourceTree = "<group>";
@@ -139,6 +153,7 @@
 				5616F07520B4B5960024F4D0 /* CameraViewController.swift */,
 				566EA22520B3B5A0003A4D9C /* CameraVC.swift */,
 				5600F00020B6568A00972331 /* LoginVC.swift */,
+				56C39C0720B8FF7D0032840B /* UsersVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,12 +265,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DevChat/Pods-DevChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,14 +288,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5616F07220B4B57D0024F4D0 /* PhotoCaptureDelegate.swift in Sources */,
+				56C39C0A20B900C30032840B /* UserCell.swift in Sources */,
+				56EF320520B899FD004349A9 /* Constants.swift in Sources */,
 				5616F07620B4B5960024F4D0 /* CameraViewController.swift in Sources */,
 				5600F00120B6568A00972331 /* LoginVC.swift in Sources */,
 				5600F00520B65E6F00972331 /* AuthService.swift in Sources */,
+				56CAE30320BB8023008326C5 /* User.swift in Sources */,
 				5616F07320B4B57D0024F4D0 /* PreviewView.swift in Sources */,
 				566EA22620B3B5A0003A4D9C /* CameraVC.swift in Sources */,
 				5600EFFF20B64E0200972331 /* RoundedButton.swift in Sources */,
 				5600EFFD20B62F6100972331 /* RoundTextField.swift in Sources */,
 				566EA22420B3B5A0003A4D9C /* AppDelegate.swift in Sources */,
+				56EF320220B89810004349A9 /* DataService.swift in Sources */,
+				56C39C0820B8FF7D0032840B /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
