@@ -11,3 +11,9 @@ import Foundation
 let USERS_REF = "users"
 
 let PROFILE_REF = "profile"
+
+let USERSVC_SEGUE_IDENTIFIER = "UsersVC"
+
+let IMAGES_STORAGE_REF = "images"
+
+let VIDEOS_STORAGE_REF = "videos"

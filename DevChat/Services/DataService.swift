@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseDatabase
+import FirebaseStorage
 
 class DataService {
     private static let _instance = DataService()
@@ -23,6 +24,19 @@ class DataService {
     var usersRef: DatabaseReference {
         return mainRef.child(USERS_REF)
     }
+    
+    var mainStorageRef: StorageReference {
+        return Storage.storage().reference(forURL: "gs://devchat-71f15.appspot.com/")
+    }
+    
+    var imagesStorageRef: StorageReference {
+        return mainStorageRef.child(IMAGES_STORAGE_REF)// "images"
+    }
+    
+    var videoStorageRef: StorageReference {
+        return mainStorageRef.child(VIDEOS_STORAGE_REF)//"videos"
+    }
+    
     
     func saveUser(uid: String) {
         let profile: Dictionary<String, AnyObject> = ["firestName": "" as AnyObject, "lastName": "" as AnyObject]
