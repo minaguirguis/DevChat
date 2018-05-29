@@ -77,7 +77,7 @@
 		5600EFFA20B62F2D00972331 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				56EF320420B899FD004349A9 /* Constants.swift */,
+				56CAE30220BB8023008326C5 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +87,7 @@
 			children = (
 				5600EFFC20B62F6100972331 /* RoundTextField.swift */,
 				5600EFFE20B64E0200972331 /* RoundedButton.swift */,
+				5616F07020B4B57D0024F4D0 /* PreviewView.swift */,
 				56C39C0920B900C30032840B /* UserCell.swift */,
 			);
 			path = View;
@@ -105,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				5616F06F20B4B57D0024F4D0 /* PhotoCaptureDelegate.swift */,
-				5616F07020B4B57D0024F4D0 /* PreviewView.swift */,
 			);
 			path = AVCam;
 			sourceTree = "<group>";
@@ -131,6 +131,7 @@
 		566EA22220B3B5A0003A4D9C /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
+				56CAE30420BB9514008326C5 /* Resources */,
 				5600F00320B65E5000972331 /* Services */,
 				5616F07720B4B59E0024F4D0 /* AVCam */,
 				5600EFFA20B62F2D00972331 /* Model */,
@@ -142,7 +143,6 @@
 				566EA22C20B3B5A0003A4D9C /* LaunchScreen.storyboard */,
 				566EA22F20B3B5A0003A4D9C /* Info.plist */,
 				564111C420B5074600AF625C /* GoogleService-Info.plist */,
-				56CAE30220BB8023008326C5 /* User.swift */,
 			);
 			path = DevChat;
 			sourceTree = "<group>";
@@ -156,6 +156,14 @@
 				56C39C0720B8FF7D0032840B /* UsersVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		56CAE30420BB9514008326C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56EF320420B899FD004349A9 /* Constants.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		630554E86FD363D78904448F /* Pods */ = {
