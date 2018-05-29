@@ -17,3 +17,5 @@ let USERSVC_SEGUE_IDENTIFIER = "UsersVC"
 let IMAGES_STORAGE_REF = "images"
 
 let VIDEOS_STORAGE_REF = "videos"
+
+let PULL_REQUESTS_REF = "pullRequest"
